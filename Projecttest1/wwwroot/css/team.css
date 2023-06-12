@@ -58,7 +58,7 @@ body {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #3EC1D5;
+  background: #FFC0CB;
   color: #fff;
   padding: 6px 12px 9px 12px;
   font-size: 16px;
@@ -75,13 +75,13 @@ body {
 }
 
 .back-to-top:focus {
-  background: #FFC30B;
+  background: #FFC0CB;
   color: #fff;
   outline: none;
 }
 
 .back-to-top:hover {
-  background: #3cd6ed;
+  background: #FFC0CB;
   color: #fff;
 }
 
@@ -112,12 +112,12 @@ div#preloader {
 }
 
 ::-moz-selection {
-  background: #3EC1D5;
+  background: #FFC0CB;
   text-shadow: none;
 }
 
 ::selection {
-  background: #3EC1D5;
+  background: #FFC0CB;
   text-shadow: none;
 }
 
@@ -324,7 +324,7 @@ div#preloader {
 }
 
 .sticky-logo h1 span {
-  color: #3ec1d5;
+  color: #FFC0CB;
 }
 .stick .main-menu ul.navbar-nav li.active > a::after {
   border: 1px solid #fff;
@@ -380,6 +380,61 @@ div#preloader {
 .stick .navbar-default .navbar-toggle {
   padding: 10px 0px;
 }
+
+/*-------------- tagged area -------------------------------*/
+
+.box1{
+    background-color: #FFE6EE;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    
+}
+
+.lines{
+  position:relative;
+  padding:0 .2em;
+  // opacity:0.5;
+  transition:color .2s ease;
+  &::before, &::after{
+    content:"";
+    display:block;
+    height: 100%;
+    width:2px;
+    position:absolute;
+    background-color:#f9f9f9;
+    transition: transform .3s ease, background-color;
+  }
+  &::before{
+    top:0;
+    left:0;
+    transform-origin:0 0;
+  }
+  &::after{
+    top:0;
+    right:0;
+    transform-origin:100% 100%;
+  }
+  
+  
+  &:hover{
+    color:#ddd;
+    &::before,&::after{
+      transform:rotateZ(-90deg);
+      background-color:#f9f9f9;
+    }
+    // &::before{
+    //   left:50%;
+    //   transform:rotateZ(-90deg) translateY(-50%);
+    // }
+    // &::after{
+    //   right:50%;
+    //   transform:rotate(-90deg) translateY(50%);
+    // }
+  }
+}
+
 
 /*----------------------------------------Team Area Css----------------------------------------*/
 
@@ -580,7 +635,7 @@ div#preloader {
 /*--------------------------------review Area--------------------------------*/
 
 .reviews-area {
-  background: url("../bocah.jpg");
+  background: url("../team1.png");
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
@@ -753,6 +808,28 @@ div#preloader {
   margin-bottom: 20px;
 }
 
+/*--------------bar financial area------*/
+
+* {box-sizing: border-box}
+
+.container1 {
+  width: 50%;
+  background-color: lightgray;
+     margin-left: auto;
+    margin-right: auto;
+}
+
+.skills {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.first {width: 60%; background-color: #3b8132;}
+.sec {width: 20%; background-color: #5bb450;}
+.third {width: 20%; background-color: #cce7c9;}
+
 /*----------------------------------------Footer Area----------------------------------------*/
 
 .footer-area {
@@ -786,7 +863,7 @@ div#preloader {
 }
 
 .footer-logo h2 span {
-  color: #3ec1d5;
+  color: #FFC0CB;
 }
 
 .footer-icons ul li {
@@ -817,7 +894,7 @@ div#preloader {
 }
 
 .footer-contacts p span {
-  color: #3EC1D5;
+  color: #FFC0CB;
   font-weight: 700;
 }
 
@@ -831,8 +908,8 @@ div#preloader {
 }
 
 .popular-tag ul li a:hover, .footer-icons ul li a:hover {
-  background: #3EC1D5;
-  border: 1px solid #3EC1D5;
+  background: #FFC0CB;
+  border: 1px solid #FFC0CB;
   color: #fff;
 }
 
@@ -860,7 +937,7 @@ div#preloader {
 
 .copyright-text a:hover {
   text-decoration: underline;
-  color: #3EC1D5;
+  color: #FFC0CB;
 }
 
 .copyright-text a {
@@ -873,7 +950,7 @@ div#preloader {
 }
 
 .copyright a, .credits a {
-  color: #3EC1D5;
+  color: #FFC0CB;
 }
 
 .credits {

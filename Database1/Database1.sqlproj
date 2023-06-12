@@ -59,7 +59,9 @@
     <Folder Include="Tables" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\UserDetails.sql" />
+    <Build Include="Tables\partnership.sql" />
     <Build Include="Tables\Genders.sql" />
+    <Build Include="Tables\Table1.sql" />
+    <Build Include="Tables\Table2.sql" />
   </ItemGroup>
 </Project>

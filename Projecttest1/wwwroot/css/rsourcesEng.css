@@ -58,7 +58,7 @@ body {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #3EC1D5;
+  background: #FFC0CB;
   color: #fff;
   padding: 6px 12px 9px 12px;
   font-size: 16px;
@@ -81,7 +81,7 @@ body {
 }
 
 .back-to-top:hover {
-  background: #3cd6ed;
+  background: #FFC0CB;
   color: #fff;
 }
 
@@ -112,12 +112,12 @@ div#preloader {
 }
 
 ::-moz-selection {
-  background: #3EC1D5;
+  background: #FFC0CB;
   text-shadow: none;
 }
 
 ::selection {
-  background: #3EC1D5;
+  background: #FFC0CB;
   text-shadow: none;
 }
 
@@ -224,7 +224,7 @@ div#preloader {
 }
 
 .main-menu ul.navbar-nav li a:hover {
-  color: #3EC1D5;
+  color: #FFC0CB;
 }
 
 .navbar {
@@ -287,7 +287,10 @@ div#preloader {
   display: block;
 }
 
-/*--------------------------------Stick menu--------------------------------*/
+/*--------------------------------*/
+
+/* 2.1. Stick menu
+/*--------------------------------*/
 
 .header-area.stick {
   background-color: rgba(0, 0, 0, 1);
@@ -321,7 +324,7 @@ div#preloader {
 }
 
 .sticky-logo h1 span {
-  color: #3ec1d5;
+  color: #FFC0CB;
 }
 .stick .main-menu ul.navbar-nav li.active > a::after {
   border: 1px solid #fff;
@@ -405,7 +408,7 @@ div#preloader {
 }
 
 .single-well ul li i {
-  color: #3EC1D5;
+  color: #FFC0CB;
   padding-right: 10px;
   font-size: 12px;
 }
@@ -414,7 +417,7 @@ div#preloader {
   color: #444;
 }
 
-img{
+.img1{
     height: 30%;
     width: 32%;
 }
@@ -452,7 +455,7 @@ img{
 }
 
 .footer-logo h2 span {
-  color: #3ec1d5;
+  color: #FFC0CB;
 }
 
 .footer-icons ul li {
@@ -483,7 +486,7 @@ img{
 }
 
 .footer-contacts p span {
-  color: #3EC1D5;
+  color: #FFC0CB;
   font-weight: 700;
 }
 
@@ -497,8 +500,8 @@ img{
 }
 
 .popular-tag ul li a:hover, .footer-icons ul li a:hover {
-  background: #3EC1D5;
-  border: 1px solid #3EC1D5;
+  background: #FFC0CB;
+  border: 1px solid #FFC0CB;
   color: #fff;
 }
 
@@ -526,7 +529,7 @@ img{
 
 .copyright-text a:hover {
   text-decoration: underline;
-  color: #3EC1D5;
+  color: #FFC0CB;
 }
 
 .copyright-text a {
@@ -539,7 +542,7 @@ img{
 }
 
 .copyright a, .credits a {
-  color: #3EC1D5;
+  color: #FFC0CB;
 }
 
 .credits {

@@ -7,10 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\.vs\VSWorkspaceState.json" />
     <Content Include="wwwroot\lib\.vs\VSWorkspaceState.json" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\.vs\game room.sln\config\applicationhost.config" />
+    <None Include="wwwroot\.vs\game room.sln\FileContentIndex\ff413265-269b-45c1-9d30-4c402eadb8e6.vsidx" />
+    <None Include="wwwroot\.vs\game room.sln\FileContentIndex\read.lock" />
+    <None Include="wwwroot\.vs\game room\config\applicationhost.config" />
+    <None Include="wwwroot\.vs\game room\FileContentIndex\8f04e792-7c38-484a-bd88-0558a4d7f879.vsidx" />
+    <None Include="wwwroot\.vs\game room\FileContentIndex\read.lock" />
+    <None Include="wwwroot\.vs\slnx.sqlite" />
+    <None Include="wwwroot\contactform\contactform.js" />
     <None Include="wwwroot\js\main.js" />
     <None Include="wwwroot\js\site.js" />
     <None Include="wwwroot\lib\.vs\lib\FileContentIndex\05425e66-939e-4c87-986c-b59b18e9ce35.vsidx" />
@@ -79,8 +88,28 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\.vs\game room.sln\FileContentIndex\merges\" />
+    <Folder Include="wwwroot\.vs\game room.sln\v17\" />
+    <Folder Include="wwwroot\.vs\game room\FileContentIndex\merges\" />
+    <Folder Include="wwwroot\.vs\game room\v17\" />
     <Folder Include="wwwroot\lib\.vs\lib\FileContentIndex\merges\" />
     <Folder Include="wwwroot\lib\.vs\lib\v17\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.16">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.16">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\autisamdata\autisamdata.csproj" />
   </ItemGroup>
 
 </Project>

@@ -381,47 +381,61 @@ div#preloader {
   padding: 10px 0px;
 }
 
-/*------------------tagged area----------------var(--color-front);*/
-:root {
-  --color-text: #FFF;
-  --color-front: hsl(250deg, 100%, 40%);
-  --color-back: hsl(252deg, 100%, 60%);
+
+/*-------------- tagged area -------------------------------*/
+
+.box1{
+    background-color: #FFE6EE;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    
 }
 
-.tag {
-  position: relative;
-  display: inline-block;
-  border-radius: 6px;
-  clip-path: polygon(20px 0px, 100% 0px, 100% 100%, 0% 100%, 0% 20px);
-  background: #FFE6EE;
-  padding: 16px 40px;
-  margin: 0 8px;
-  font-weight: 600;
-  font-size: 18px;
-  color: var(--color-text);
-  transition: clip-path 500ms;
+.lines{
+  position:relative;
+  padding:0 .2em;
+  // opacity:0.5;
+  transition:color .2s ease;
+  &::before, &::after{
+    content:"";
+    display:block;
+    height: 100%;
+    width:2px;
+    position:absolute;
+    background-color:#f9f9f9;
+    transition: transform .3s ease, background-color;
+  }
+  &::before{
+    top:0;
+    left:0;
+    transform-origin:0 0;
+  }
+  &::after{
+    top:0;
+    right:0;
+    transform-origin:100% 100%;
+  }
+  
+  
+  &:hover{
+    color:#ddd;
+    &::before,&::after{
+      transform:rotateZ(-90deg);
+      background-color:#f9f9f9;
+    }
+    // &::before{
+    //   left:50%;
+    //   transform:rotateZ(-90deg) translateY(-50%);
+    // }
+    // &::after{
+    //   right:50%;
+    //   transform:rotate(-90deg) translateY(50%);
+    // }
+  }
 }
 
-.tag:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  background: pink;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); 
-  border-radius: 0 0 6px 0;
-  transition: transform 500ms;
-}
-
-.tag:hover {
-  clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0% 100%, 0% 0px);
-}
-
-.tag:hover:after {
-  transform: translate(-100%, -100%);
-}
 /*----------------------------------------
 
  main about Area
@@ -436,7 +450,6 @@ div#preloader {
     text-align: center;
     color: white;
 }
-
 
 
 

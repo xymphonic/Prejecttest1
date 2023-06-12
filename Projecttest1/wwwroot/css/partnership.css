@@ -33,6 +33,7 @@ html, body {
 
 a:focus {
   outline: 0px solid;
+    
 }
 
 img {
@@ -58,7 +59,7 @@ body {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #3EC1D5;
+  background: #FFC0CB;
   color: #fff;
   padding: 6px 12px 9px 12px;
   font-size: 16px;
@@ -81,7 +82,7 @@ body {
 }
 
 .back-to-top:hover {
-  background: #3cd6ed;
+  background: #FFC0CB;
   color: #fff;
 }
 
@@ -112,12 +113,12 @@ div#preloader {
 }
 
 ::-moz-selection {
-  background: #3EC1D5;
+  background: #FFC0CB;
   text-shadow: none;
 }
 
 ::selection {
-  background: #3EC1D5;
+  background: #FFC0CB;
   text-shadow: none;
 }
 
@@ -224,7 +225,7 @@ div#preloader {
 }
 
 .main-menu ul.navbar-nav li a:hover {
-  color: #3EC1D5;
+  color: #FFC0CB;
 }
 
 .navbar {
@@ -324,7 +325,7 @@ div#preloader {
 }
 
 .sticky-logo h1 span {
-  color: #3ec1d5;
+  color: #FFC0CB;
 }
 .stick .main-menu ul.navbar-nav li.active > a::after {
   border: 1px solid #fff;
@@ -380,6 +381,66 @@ div#preloader {
 .stick .navbar-default .navbar-toggle {
   padding: 10px 0px;
 }
+
+
+/*-------------- tagged area -------------------------------*/
+
+.box1{
+    background-color: #FFE6EE;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    
+}
+
+a{
+    color: white;
+}
+
+.lines{
+  position:relative;
+  padding:0 .2em;
+  // opacity:0.5;
+  transition:color .5s ease;
+  &::before, &::after{
+    content:"";
+    display:block;
+    height: 100%;
+    width:2px;
+    position:absolute;
+    background-color:#f9f9f9;
+    transition: transform .3s ease, background-color;
+  }
+  &::before{
+    top:0;
+    left:0;
+    transform-origin:0 0;
+  }
+  &::after{
+    top:0;
+    right:0;
+    transform-origin:100% 100%;
+  }
+  
+  
+  &:hover{
+    color:#ddd;
+    &::before,&::after{
+      transform:rotateZ(-90deg);
+      background-color:#f9f9f9;
+    }
+    // &::before{
+    //   left:50%;
+    //   transform:rotateZ(-90deg) translateY(-50%);
+    // }
+    // &::after{
+    //   right:50%;
+    //   transform:rotate(-90deg) translateY(50%);
+    // }
+  }
+}
+
 /*------------------------------About Area--------------------------------*/
 
 
@@ -416,7 +477,7 @@ div#preloader {
   color: #444;
 }
 
-/* table area -----*/
+/*---------- table area -----*/
 
 * {box-sizing: border-box}
 
@@ -442,7 +503,7 @@ hr {
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
+  background-color: #306754;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -482,6 +543,92 @@ button:hover {
     width: 100%;
   }
 }
+/*-----------------------------media area--------------------*/
+
+.img1 {
+	width: 30%;
+    height: 39%;
+	float: left;
+	margin: 1.66%;
+    
+}
+
+h8 {
+	margin: 1.66%;
+	font-size: 30px;
+/* 	font-family: 'Rock Salt', sans-serif; */
+	font-family: 'Syncopate', sans-serif;
+	text-transform: uppercase;
+	width: 63.32%;
+	border-bottom: 2px solid #f1f1f1;
+	padding-bottom: 10px;
+	font-weight: lighter;
+}
+
+/*--------------------------------about donate Area--------------------------------*/
+
+.reviews-area {
+  background: url("../team1.png");
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.work-left-text {
+  background: #3EC1D5 none repeat scroll 0 0;
+}
+
+.work-left-text {
+  width: 50%;
+}
+
+.work-right-text {
+  background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+  float: right;
+  height: 100%;
+  overflow: hidden;
+  padding: 71px 0;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.work-right-text h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.work-right-text h5 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+
+.work-right-text .sus-btn {
+  margin-left: 0;
+  margin-top: 20px;
+}
+
+.single-awesome-4 {
+  display: block;
+  float: left;
+  overflow: hidden;
+  width: 33.33%;
+}
+
+.single-awesome-4 .add-actions {
+  padding: 10px 20px;
+}
+
 
 /*----------------------------------------Footer Area----------------------------------------*/
 
@@ -516,7 +663,7 @@ button:hover {
 }
 
 .footer-logo h2 span {
-  color: #3ec1d5;
+  color: #FFC0CB;
 }
 
 .footer-icons ul li {
@@ -547,7 +694,7 @@ button:hover {
 }
 
 .footer-contacts p span {
-  color: #3EC1D5;
+  color: #FFC0CB;
   font-weight: 700;
 }
 
@@ -561,8 +708,8 @@ button:hover {
 }
 
 .popular-tag ul li a:hover, .footer-icons ul li a:hover {
-  background: #3EC1D5;
-  border: 1px solid #3EC1D5;
+  background: #FFC0CB;
+  border: 1px solid #FFC0CB;
   color: #fff;
 }
 
@@ -590,7 +737,7 @@ button:hover {
 
 .copyright-text a:hover {
   text-decoration: underline;
-  color: #3EC1D5;
+  color: #FFC0CB;
 }
 
 .copyright-text a {
@@ -603,7 +750,7 @@ button:hover {
 }
 
 .copyright a, .credits a {
-  color: #3EC1D5;
+  color: #FFC0CB;
 }
 
 .credits {
@@ -748,6 +895,11 @@ button:hover {
         padding-left: 20px;
         padding-top: 15px;
       }
+
+
+
+
+
 
 /*----------------------------------------
  .End CSS

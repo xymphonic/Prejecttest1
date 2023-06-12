@@ -1,0 +1,37 @@
+﻿@page
+@model newadmin.Pages.EditBlogtest2.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Secondblog</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Secondblog.Title)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Secondblog.Title)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Secondblog.Discription)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Secondblog.Discription)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Secondblog.Contex)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Secondblog.Contex)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Secondblog?.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

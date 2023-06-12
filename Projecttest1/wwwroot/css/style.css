@@ -75,6 +75,8 @@ h3 {
 h4 {
   font-size: 24px;
   line-height: 26px;
+   word-spacing: 5px;
+   letter-spacing: 1px; 
 }
 
 h5 {
@@ -381,7 +383,7 @@ div#preloader {
 }
 
 .sticky-logo h1 span {
-  color: #3ec1d5;
+  color: #FFC0CB;
 }
 .stick .main-menu ul.navbar-nav li.active > a::after {
   border: 1px solid #fff;
@@ -679,7 +681,7 @@ div#preloader {
 /*--------------------------------*/
 
 .reviews-area {
-  background: url("../bocah.jpg");
+  background: url("../Autism1.jpeg");
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
@@ -948,13 +950,13 @@ div#preloader {
 
 .contact-form button[type=submit]:hover {
   color: #fff;
-  border: 1px solid #3EC1D5;
-  background: #3EC1D5;
+  border: 1px solid #FFC0CB;
+  background: #FFC0CB;
 }
 
 .contact-form  #sendmessage {
-  color: #3EC1D5;
-  border: 1px solid #3EC1D5;
+  color: #FFC0CB;
+  border: 1px solid #FFC0CB;
   display: none;
   text-align: center;
   padding: 15px;
@@ -1044,7 +1046,7 @@ div#preloader {
 }
 
 .footer-logo h2 span {
-  color: #3ec1d5;
+  color: #FFC0CB;
 }
 
 .footer-icons ul li {
@@ -1075,7 +1077,7 @@ div#preloader {
 }
 
 .footer-contacts p span {
-  color: #3EC1D5;
+  color: #FFC0CB;
   font-weight: 700;
 }
 
@@ -1089,8 +1091,8 @@ div#preloader {
 }
 
 .popular-tag ul li a:hover, .footer-icons ul li a:hover {
-  background: #3EC1D5;
-  border: 1px solid #3EC1D5;
+  background: #FFC0CB;
+  border: 1px solid #FFC0CB;
   color: #fff;
 }
 
@@ -1131,7 +1133,7 @@ div#preloader {
 }
 
 .copyright a, .credits a {
-  color: #3EC1D5;
+  color: #FFC0CB;
 }
 
 .credits {

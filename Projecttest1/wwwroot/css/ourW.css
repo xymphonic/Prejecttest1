@@ -381,6 +381,61 @@ div#preloader {
   padding: 10px 0px;
 }
 
+/*-------------- tagged area -------------------------------*/
+
+.box1{
+    background-color: #FFE6EE;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    
+}
+
+.lines{
+  position:relative;
+  padding:0 .2em;
+  // opacity:0.5;
+  transition:color .2s ease;
+  &::before, &::after{
+    content:"";
+    display:block;
+    height: 100%;
+    width:2px;
+    position:absolute;
+    background-color:#f9f9f9;
+    transition: transform .3s ease, background-color;
+  }
+  &::before{
+    top:0;
+    left:0;
+    transform-origin:0 0;
+  }
+  &::after{
+    top:0;
+    right:0;
+    transform-origin:100% 100%;
+  }
+  
+  
+  &:hover{
+    color:#ddd;
+    &::before,&::after{
+      transform:rotateZ(-90deg);
+      background-color:#f9f9f9;
+    }
+    // &::before{
+    //   left:50%;
+    //   transform:rotateZ(-90deg) translateY(-50%);
+    // }
+    // &::after{
+    //   right:50%;
+    //   transform:rotate(-90deg) translateY(50%);
+    // }
+  }
+}
+
+
 /*------------------------------
   3. About Area
 --------------------------------*/
