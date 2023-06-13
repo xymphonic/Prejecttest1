@@ -1,9 +1,12 @@
 ﻿@page
-@model Projecttest1.Pages.PartnershipModel
+@model Projecttest1.Pages.DonateModel
 @{
 }
 
-<link href="~/css/partnership.css" rel="stylesheet">
+<link href="css/partnership.css" rel="stylesheet">
+<link href="css/policies.css" rel="stylesheet">
+
+
 <!---tagged area---->
 <br>
 <br>
@@ -15,123 +18,37 @@
     <a href="Joinus" class="lines">Join Us</a>
     <a href="Donate" class="lines">Donation</a>
 </div>
+<br>
 
+<!--------------- box area---------->
+<br>
 
-<!-- Start About area -->
-<div id="about" class="about-area area-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="section-headline text-center">
-                    <h2>Partnership</h2><br>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <!-- single-well start-->
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="well-left">
-                    <div class="single-well">
-                        <a href="#">
-                            <img src="puzg.gif" alt="">
-                        </a>
+<div class="box2" id="donate">
+
+    <div id="about" class="about-area area-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-headline text-center">
+                        <h3>Make<i> Donation</i></h3>
                     </div>
                 </div>
             </div>
-            <!-- single-well end-->
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="well-middle">
-                    <div class="single-well">
-                        <a href="#">
-                            <h4 class="sec-head">Collaborate with us</h4>
-                        </a>
-                        <p>
-                            We are Non-profit organization committed to education and assisting Sarawakian families with autistic children<br>
-
-                            Our goal is to help families identify the warning signs of autism early on. We empower families with information on autism that they can use to advocate for services for their child.  <br>
-
-                            Spectrum of care - Programming that focuses on building efficacy within the Autistic Community. We build a strong foundation within families by providing support, training, avocacy  and panel discusiions focussing on empower parents/caretakers to become their child's first and best advocate. Our Program as below:-
-
-                        </p>
-                        <ul>
-                            <li>
-                                <i class="fa fa-check"></i> <b>fund our programs</b>
-                            </li>
-                            <li>
-                                <i class="fa fa-check"></i> <b>fundraise for us</b>
-                            </li>
-                            <li>
-                                <i class="fa fa-check"></i> <b>volunteer with us</b>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- End col-->
         </div>
+        <i>We want to do our best, so they can be their best!</i><br>
+
+        but we cant do it alone, we need your help; donations to build this foundation where they will find education, living spaces, or be trained to the job they love and want. To develop the services and programs they want/ services work. Think of difference your donation of time and or money will make in so many lives!<br>
+
+        <b>Our promise to protect the privacy and confidentiality of your personal data: All personal data collected will be treated according to the requirements in Personal Data(Privacy) with respect to the management of personal information. We promise not to sell, share or swap your personal information with any other company/organization. The information you provide will be treated as srictly confidential, used only by MARF and our carefully selected service providers for the purpose of donation administration.</b>
+
+
+
     </div>
 </div>
-
-<!-- End About area -->
-<!---form registration area-->
-
-<form action="action_page.php" style="border:1px solid #ccc" id="signup">
-    <div class="container">
-        <h1>Sign Up</h1>
-        <p>Please fill in this form to create an account.</p>
-        <p>Join us now!</p>
-        <hr>
-
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
-
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-
-        <label for="psw-repeat"><b>Repeat Password</b></label>
-        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-        <label for="position"><b>Position</b></label><br>
-        <input type="radio" name="position" value="volunteer" id="voluteer">
-        <label for="volunteer">Volunteers</label>
-        <input type="radio" name="position" value="staff" id="staff">
-        <label for="staff">Staff</label>
-        <input type="radio" name="position" value="intern" id="internship">
-        <label for="intern">Intership</label>
-
-        <br><br>
-        <label>
-            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-        </label><br>
-
-
-
-
-        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-        <div class="clearfix">
-            <button type="submit" class="signupbtn">Sign Up</button>
-        </div>
-    </div>
-</form>
-<br>
 <br>
 
-<!------ media area----->
 
-<h8>media</h8>
-<br>
-<br>
-
-<img id="media1" class="img1" src="annualevent.png" alt="">
-<img id="media2" class="img1" src="event.jpg" alt="">
-<img id="media3" class="img1" src="event2.jpg" alt="">
-
-
-<!------end media area----->
 <!-- donate area -->
-<br>
 <br>
 <div class="container theme-background-white main-body" id="donating">
     <div class="col-md-12">
@@ -178,7 +95,7 @@
                         </a>
                     </li>
                     <li id="other-input">
-                        <span>$</span>
+                        <span>RM</span>
                         <input data-impact="That’s great. Thank you!">
                     </li>
                     <li>
@@ -195,8 +112,7 @@
                     </li>
                 </ul>
                 <p class="impact">
-                    Covers housing or counseling services for one person<br>
-                    <i><a href="donate.html">for more info</a></i>
+                    Covers housing or counseling services for one person
                 </p>
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
