@@ -14,7 +14,7 @@ namespace autisamdata.Models
             base.OnConfiguring(optionsBuilder);
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=.;Database=master;Trusted_Connection=True");
+                optionsBuilder.UseSqlServer("Server=.;Database=MyDatabase;Trusted_Connection=True");
             }
         }
 

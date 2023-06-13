@@ -25,6 +25,7 @@ namespace autisamdata.Models
         public virtual DbSet<Secondblog> Secondblog { get; set; }
         public virtual DbSet<Teamdata> Teamdata { get; set; }
 
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("Scaffolding:ConnectionString", "Data Source=(local);Initial Catalog=Databasetest;Integrated Security=true");
